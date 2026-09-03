@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search - PASACAO ACADEMY</title>
+  <meta name="description" content="Search PASACAO ACADEMY website for programs, news, pages, and more.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .search-page-section { padding: 60px 0; }
+    .search-page-input-group { display: flex; align-items: center; background: var(--white); border-radius: 60px; overflow: hidden; box-shadow: var(--shadow-md); border: 2px solid var(--light-gray); }
+    .search-page-input-group:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(0,102,51,0.15); }
+    .search-page-input-group i { padding: 0 20px; color: var(--gray); }
+    .search-page-input { flex: 1; border: none; outline: none; padding: 18px 0; font-size: 1.1rem; font-family: var(--font); background: transparent; }
+    .search-page-input-group button { background: var(--primary); color: var(--white); border: none; padding: 14px 32px; margin: 5px; border-radius: 50px; font-weight: 600; cursor: pointer; transition: var(--transition); }
+    .search-page-input-group button:hover { background: var(--primary-dark); }
+    .search-result-item { padding: 20px; border-bottom: 1px solid var(--light-gray); transition: var(--transition); }
+    .search-result-item:hover { background: var(--primary-10); }
+    .search-result-item:last-child { border-bottom: none; }
+    .search-result-item h5 { margin-bottom: 5px; }
+    .search-result-item h5 a { color: var(--primary); text-decoration: none; }
+    .search-result-item h5 a:hover { text-decoration: underline; }
+    .search-result-item p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <div class="top-bar">...</div>
+  <nav class="navbar navbar-expand-lg main-navbar sticky-top" id="mainNavbar">...</nav>
+
+  <section class="breadcrumb-section">
+    <div class="container">
+      <h1>Search</h1>
+      <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active">Search</li></ol></nav>
+    </div>
+  </section>
+
+  <section class="search-page-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center mb-5">
+            <h2 class="section-title">Search PASACAO ACADEMY</h2>
+            <div class="section-divider"></div>
+          </div>
+          <div class="search-page-input-group">
+            <i class="fas fa-search"></i>
+            <input type="text" class="search-page-input" id="searchPageInput" placeholder="Search for programs, news, pages..." autocomplete="off">
+            <button id="searchPageBtn"><i class="fas fa-search me-2"></i>Search</button>
+          </div>
+          <div class="mt-4" id="searchPageResults">
+            <p class="text-muted text-center">Enter a search term to find pages, programs, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">...</footer>
+  <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get('q');
+      const input = document.getElementById('searchPageInput');
+      const resultsDiv = document.getElementById('searchPageResults');
+      const sitePages = [
+        { title:'Home', url:'index.html', desc:'Premier University homepage' },
+        { title:'About Us', url:'about.html', desc:'About Premier University' },
+        { title:'Admissions', url:'admissions.html', desc:'Apply and admissions info' },
+        { title:'Academics', url:'academics.html', desc:'Academic programs' },
+        { title:'Research', url:'research.html', desc:'Research and innovation' },
+        { title:'Campus Life', url:'campus-life.html', desc:'Campus facilities and student life' },
+        { title:'News & Events', url:'news.html', desc:'Latest news and events' },
+        { title:'Contact Us', url:'contact.html', desc:'Get in touch' },
+        { title:'Elementary Program', url:'programs/elementary.html', desc:'Elementary education' },
+        { title:'Junior High School', url:'programs/junior-high.html', desc:'Junior high school program' },
+        { title:'Senior High School', url:'programs/senior-high.html', desc:'Senior high school tracks' },
+        { title:'College Programs', url:'programs/college.html', desc:'Undergraduate programs' },
+        { title:'Graduate School', url:'programs/graduate.html', desc:'Master\'s and doctoral programs' },
+        { title:'Technical-Vocational', url:'programs/technical.html', desc:'Skills-based training' }
+      ];
+      function performSearch(q){
+        const term = q.toLowerCase().trim();
+        if(!term){ resultsDiv.innerHTML = '<p class="text-muted text-center">Enter a search term to find pages, programs, and more.</p>'; return; }
+        const matches = sitePages.filter(p => p.title.toLowerCase().includes(term) || p.desc.toLowerCase().includes(term) || p.url.toLowerCase().includes(term));
+        if(matches.length===0){ resultsDiv.innerHTML = '<div class="alert alert-info">No results found for "'+q+'". Try searching for "Admissions", "Programs", etc.</div>'; return; }
+        resultsDiv.innerHTML = '<h5 class="mb-3">Found '+matches.length+' result(s):</h5>'+matches.map(p => 
+          '<div class="search-result-item"><h5><a href="'+p.url+'">'+p.title+'</a></h5><p>'+p.desc+'</p></div>'
+        ).join('');
+      }
+      if(query){ input.value = query; performSearch(query); }
+      input.addEventListener('input', function(){ performSearch(this.value); });
+      document.getElementById('searchPageBtn').addEventListener('click', function(){ performSearch(input.value); });
+      input.addEventListener('keydown', function(e){ if(e.key==='Enter') performSearch(this.value); });
+    });
+  </script>
+</body>
+</html>
+

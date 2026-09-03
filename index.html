@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PASACAO ACADEMY - Empowering Future Leaders Through Quality Education. Explore our academic programs, campus life, and admissions.">
+  <meta name="keywords" content="university, education, college, academics, campus, admissions, programs">
+  <meta name="author" content="PASACAO ACADEMY">
+  <title>PASACAO ACADEMY</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================
+   1. TOP BAR
+  ============================================ -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-9 col-md-8">
+          <div class="quick-links d-flex flex-wrap justify-content-center justify-content-md-start">
+            <a href="campus-life.html"><i class="fas fa-tree me-1"></i> Campus Life</a>
+            <a href="academics.html#calendar"><i class="fas fa-calendar-alt me-1"></i> Academic Calendar</a>
+            <a href="search.html"><i class="fas fa-search me-1"></i> Degree Finder</a>
+            <a href="campus-life.html#portal"><i class="fas fa-user-graduate me-1"></i> Students</a>
+            <a href="about.html#faculty"><i class="fas fa-chalkboard-teacher me-1"></i> Faculty</a>
+            <a href="about.html#alumni"><i class="fas fa-users me-1"></i> Alumni</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center text-md-end">
+          <a href="admissions.html" class="btn-apply-top"><i class="fas fa-check-circle me-1"></i> Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+   2. MAIN NAVIGATION
+  ============================================ -->
+  <nav class="navbar navbar-expand-lg main-navbar sticky-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="palogo.png" alt="palogo.png">
+        <div class="school-name">
+          PASACAO ACADEMY
+          <small>Excellence in Education Since 1961</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item dropdown mega-menu">
+            <a class="nav-link dropdown-toggle" href="academics.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Academics</a>
+            <ul class="dropdown-menu">
+              <li class="mega-menu-content">
+                <div class="mega-col">
+                  <h6>Programs</h6>
+                  <a href="programs/elementary.html"><i class="fas fa-child"></i> Elementary</a>
+                  <a href="programs/junior-high.html"><i class="fas fa-user-graduate"></i> Junior High School</a>
+                  <a href="programs/senior-high.html"><i class="fas fa-users"></i> Senior High School</a>
+                  <a href="programs/college.html"><i class="fas fa-university"></i> College</a>
+                  <a href="programs/graduate.html"><i class="fas fa-graduation-cap"></i> Graduate School</a>
+                  <a href="programs/technical.html"><i class="fas fa-tools"></i> Technical-Vocational</a>
+                </div>
+                <div class="mega-col">
+                  <h6>Quick Links</h6>
+                  <a href="academics.html#calendar"><i class="fas fa-calendar-alt"></i> Academic Calendar</a>
+                  <a href="academics.html#library"><i class="fas fa-library"></i> Library</a>
+                  <a href="academics.html#online-learning"><i class="fas fa-laptop"></i> Online Learning</a>
+                  <a href="academics.html#research-centers"><i class="fas fa-flask"></i> Research Centers</a>
+                  <a href="academics.html#international"><i class="fas fa-globe"></i> International Programs</a>
+                </div>
+                <div class="mega-col">
+                  <h6>Resources</h6>
+                  <a href="admissions.html"><i class="fas fa-check-circle"></i> Apply Now</a>
+                  <a href="admissions.html#scholarships"><i class="fas fa-trophy"></i> Scholarships</a>
+                  <a href="admissions.html#tuition"><i class="fas fa-dollar-sign"></i> Tuition & Fees</a>
+                  <a href="admissions.html#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+                  <a href="about.html#faculty"><i class="fas fa-chalkboard-teacher"></i> Faculty</a>
+                </div>
+                <div class="mega-col">
+                  <h6>Quick Links</h6>
+                  <a href="campus-life.html"><i class="fas fa-tree"></i> Campus Life</a>
+                  <a href="news.html"><i class="fas fa-newspaper"></i> News & Events</a>
+                  <a href="research.html"><i class="fas fa-flask"></i> Research</a>
+                  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                  <a href="campus-life.html#portal"><i class="fas fa-user-graduate"></i> Student Portal</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="campus-life.html">Campus Life</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-search d-flex align-items-center">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+   3. HERO SECTION
+  ============================================ -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="animate-fade-in-up">Empowering Future Leaders Through Quality Education</h1>
+            <p class="animate-fade-in-up" style="animation-delay: 0.2s;">Join a community of scholars, innovators, and leaders. At PASACAO ACADEMY, we provide world-class education that transforms lives and shapes the future.</p>
+            <div class="btn-group-custom animate-fade-in-up" style="animation-delay: 0.4s;">
+              <a href="admissions.html" class="btn btn-green btn-custom"><i class="fas fa-check-circle me-2"></i>Apply Now</a>
+              <a href="academics.html" class="btn btn-outline-green btn-custom"><i class="fas fa-book-open me-2"></i>Explore Programs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path d="M0,50 C320,100 720,0 1440,50 L1440,100 L0,100 Z" fill="#ffffff" opacity="0.8"></path>
+        <path d="M0,60 C360,90 1080,10 1440,60 L1440,100 L0,100 Z" fill="#ffffff"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================================
+   5. ABOUT SECTION
+  ============================================ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-left">
+          <div class="about-image-wrapper">
+            <img src="lolomel.jpg" alt="Pasacao Academy Campus" class="img-fluid">
+            <div class="experience-badge">
+              <h3>65+</h3>
+              <span>Years of Excellence</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal-right">
+          <div class="about-content">
+            <span class="green-text fw-semibold text-uppercase small">About Us</span>
+            <h2>Shaping the Future of Education</h2>
+            <div class="section-divider-left"></div>
+            <p>Founded in 1961, Pasacao Academy has been at the forefront of higher education, committed to academic excellence, innovation, and community service. Our mission is to provide accessible, quality education that empowers students to become leaders in their chosen fields.</p>
+            <p>Dr. Melchor T. Villanueva was born on January 6, 1907. Undaunted by his parent’s meager income and their family’s social status, the young Villanueva pursued his high school studies in Manila at the Philippine Normal School while working as a barber in downtown Manila and as a farmhand in a bangus culture farm in Malabon during weekends. After graduating from high school, he accepted a teaching job that financed his college studies at the University of the Philippines, until he finished his Masteral Degree at the same university in 1937.</p>
+            <p>In that same year, Dr. Villanueva was first engaged with the Bicolanos when he accepted a provincial teaching assignment at the Camarines Sur High School in Naga. He then taught in Ateneo de Naga and Colegio de Sta. Isabel. He pursued his doctoral studies as a Fullbright Scholar at the University of Iowa and Missouri State University in the United States of America where he earned the Degree of Doctor of Education.</p>
+            <p>When World War II struck, Dr. Villanueva served valiantly as a lieutenant in the guerilla movement under Col. Agustin Marking’s Fil-American troops. For his courage and heroism, he was presented with the prestigious Presidential Gold Medal Award.</p>
+            <p>Outside teaching, Dr. Villanueva loved music, played the violin and became a conductor of the Philippine Normal College Orchestra. In the field of sports, he was a boxer and weightlifter, lifting well into his nineties. He passed away on June 13, 2000 at the age of 93, leaving behind a lasting legacy of education and service in Naga</p>
+            <ul class="about-features">
+              <li><i class="fas fa-check-circle"></i> Accredited Programs</li>
+              <li><i class="fas fa-check-circle"></i> Global Partnerships</li>
+              <li><i class="fas fa-check-circle"></i> Research Opportunities</li>
+              <li><i class="fas fa-check-circle"></i> Community Engagement</li>
+              <li><i class="fas fa-check-circle"></i> Industry Connections</li>
+              <li><i class="fas fa-check-circle"></i> Student Support Services</li>
+            </ul>
+            <a href="about.html" class="btn btn-green btn-custom"><i class="fas fa-arrow-right me-2"></i>Learn More About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+   6. ACADEMIC PROGRAMS
+  ============================================ -->
+  <section class="programs-section" id="programs">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="green-text fw-semibold text-uppercase small">Our Programs</span>
+        <h2 class="section-title">Academic Programs</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Discover a wide range of academic programs designed to prepare you for a successful career and lifelong learning.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="program-card reveal">
+            <div class="program-icon"><i class="fas fa-child"></i></div>
+            <h5>Elementary</h5>
+            <p>Building strong foundations with a comprehensive curriculum focused on holistic child development.</p>
+            <a href="programs/elementary.html" class="btn-link">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="program-card reveal">
+            <div class="program-icon"><i class="fas fa-user-graduate"></i></div>
+            <h5>Junior High School</h5>
+            <p>Bridging foundational knowledge with advanced learning to prepare for senior high school.</p>
+            <a href="programs/junior-high.html" class="btn-link">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="program-card reveal">
+            <div class="program-icon"><i class="fas fa-users"></i></div>
+            <h5>Senior High School</h5>
+            <p>Specialized tracks in STEM, ABM, HUMSS, and TVL to equip students for college and career.</p>
+            <a href="programs/senior-high.html" class="btn-link">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="program-card reveal">
+            <div class="program-icon"><i class="fas fa-university"></i></div>
+            <h5>College</h5>
+            <p>Undergraduate programs across various disciplines with industry-aligned curricula.</p>
+            <a href="programs/college.html" class="btn-link">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="program-card reveal">
+            <div class="program-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h5>Graduate School</h5>
+            <p>Master's and doctoral programs designed for advanced scholarship and research.</p>
+            <a href="programs/graduate.html" class="btn-link">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="program-card reveal">
+            <div class="program-icon"><i class="fas fa-tools"></i></div>
+            <h5>Technical-Vocational</h5>
+            <p>Skills-based programs offering practical training for immediate employment and entrepreneurship.</p>
+            <a href="programs/technical.html" class="btn-link">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+   7. WHY CHOOSE US
+  ============================================ -->
+  <section class="why-choose-section" id="why-choose">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="green-text fw-semibold text-uppercase small">Why Choose Us</span>
+        <h2 class="section-title">The Pasacao Academy</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">We are committed to providing an exceptional educational experience that prepares students for a lifetime of success.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-card reveal">
+            <div class="feature-icon"><i class="fas fa-star"></i></div>
+            <h5>Quality Education</h5>
+            <p>Rigorous academic standards and innovative teaching methods ensure our students receive a world-class education.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-card reveal">
+            <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h5>Experienced Faculty</h5>
+            <p>Our faculty comprises distinguished scholars and industry experts dedicated to mentoring the next generation.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-card reveal">
+            <div class="feature-icon"><i class="fas fa-building"></i></div>
+            <h5>Modern Facilities</h5>
+            <p>State-of-the-art laboratories, libraries, and learning spaces create an environment conducive to excellence.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-card reveal">
+            <div class="feature-icon"><i class="fas fa-heart"></i></div>
+            <h5>Student-Centered Learning</h5>
+            <p>We prioritize personalized attention, holistic development, and student well-being in everything we do.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+   8. STATISTICS
+  ============================================ -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-item reveal">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-number"><span class="counter" data-target="1200">0</span><span class="suffix">+</span></div>
+            <div class="stat-label">Students Enrolled</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-item reveal">
+            <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div class="stat-number"><span class="counter" data-target="65">0</span><span class="suffix">+</span></div>
+            <div class="stat-label">Faculty Members</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-item reveal">
+            <div class="stat-icon"><i class="fas fa-book-open"></i></div>
+            <div class="stat-number"><span class="counter" data-target="120">0</span><span class="suffix">+</span></div>
+            <div class="stat-label">Programs Offered</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="stat-item reveal">
+            <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+            <div class="stat-number"><span class="counter" data-target="65">0</span><span class="suffix">+</span></div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+   9. CAMPUS NEWS & EVENTS
+  ============================================ -->
+  <section class="news-section" id="news">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="green-text fw-semibold text-uppercase small">Stay Informed</span>
+        <h2 class="section-title">Campus News & Events</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Keep up with the latest happenings, achievements, and upcoming events at PASACAO ACADEMY.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card reveal">
+            <div class="news-image">
+              <img src="ntpfaculty.jpg" alt="Graduation Ceremony">
+              <span class="news-date-badge"><i class="far fa-calendar-alt me-1"></i>July 30, 2026</span>
+            </div>
+            <div class="news-body">
+              <span class="news-category"><i class="fas fa-tag me-1"></i>Events</span>
+              <h5>FACULTY and STAFF</h5>
+              <p>𝗠𝗲𝗲𝘁 𝘁𝗵𝗲 𝗙𝗮𝗰𝘂𝗹𝘁𝘆 𝗮𝗻𝗱 𝗦𝘁𝗮𝗳𝗳 𝗼𝗳 𝗣𝗮𝘀𝗮𝗰𝗮𝗼 𝗔𝗰𝗮𝗱𝗲𝗺𝘆
+Driven by excellence, integrity, and service, our dedicated faculty and staff are committed to inspiring, guiding, and empowering every learner. United in purpose, we continue to 𝗕𝗟𝗢𝗢𝗠 by shaping learners into outstanding, compassionate, and open-hearted members of society while faithfully upholding the mission and vision of Pasacao Academy.</p>
+              <a href="news-article.html" class="btn-read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card reveal">
+            <div class="news-image">
+              <img src="research.jpg" alt="Research Symposium">
+              <span class="news-date-badge"><i class="far fa-calendar-alt me-1"></i>july 14, 2026</span>
+            </div>
+            <div class="news-body">
+              <span class="news-category"><i class="fas fa-flask me-1"></i>Parents  </span>
+              <h5> Science Laboratory Activity | 10–Leucothea</h5>
+              <p>Who knew a small strip of litmus paper could reveal so much?
+Today, 10–Leucothea put different household substances to the test to determine whether they were acidic, basic, or neutral. From making predictions to watching the litmus paper change, every result made the activity more exciting and gave us a better understanding of how pH indicators work. 
+Learning definitely hits differently when you get to experience it firsthand. Beyond identifying acids, bases, and neutral solutions, this activity challenged us to observe carefully, think critically, and work together as a team.</p>
+              <a href="news-article.html" class="btn-read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card reveal">
+            <div class="news-image">
+              <img src="basketball.jpg" alt="Sports Festival">
+              <span class="news-date-badge"><i class="far fa-calendar-alt me-1"></i>April 10, 2025</span>
+            </div>
+            <div class="news-body">
+              <span class="news-category"><i class="fas fa-running me-1"></i>Campus Life</span>
+              <h5>CHAMPIONSHIP GAME DAY!</h5>
+              <p>The moment we’ve been waiting for is here! The Pasacao Academy White Tigers are ready to step onto the court and give their all in the fight for the championship. All the hard work, teamwork, sacrifices, and determination have led to this moment. Play with heart, trust your teammates, and leave everything on the court.
+One team. One goal. One championship.
+LET’S GO, WHITE TIGERS! ROAR WITH PRIDE!</p>
+              <a href="news-article.html" class="btn-read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card reveal">
+            <div class="news-image">
+              <img src="parents.jpg" alt="Community Outreach">
+              <span class="news-date-badge"><i class="far fa-calendar-alt me-1"></i>July 28, 2026</span>
+            </div>
+            <div class="news-body">
+              <span class="news-category"><i class="fas fa-hands-helping me-1"></i>Community</span>
+              <h5>Community Outreach Program</h5>
+              <p>At Pasacao Academy, we believe that our parents are valued partners in every learner's journey. That's why we're happy to provide a Parents' Area, a simple, comfortable space where parents can relax, wait, and connect while their children are in school.
+More than just a waiting area, this area reflects our appreciation for the unwavering love, support, and involvement of our parents. We hope it becomes a welcoming place where meaningful conversations, friendships, and a stronger sense of community can grow.
+As we continue to live out this school year's theme, B.L.O.O.M. (Building Learners into Outstanding and Open-Hearted Members of Society), we recognize that creating a nurturing environment extends beyond our classrooms. It also means making every member of our school family feel welcomed, valued, and at home.
+Thank you to all our parents, especially to the Family Council Officers, headed by Mx. Noel Callada, for your continued trust and partnership. Together, we help our learners bloom into their fullest potential. </p>
+              <a href="news-article.html" class="btn-read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card reveal">
+            <div class="news-image">
+              <img src="offers.jpg" alt="Cultural Festival">
+              <span class="news-date-badge"><i class="far fa-calendar-alt me-1"></i>February 20, 2025</span>
+            </div>
+            <div class="news-body">
+              <span class="news-category"><i class="fas fa-palette me-1"></i>Culture</span>
+              <h5>Cultural Festival & Arts Exhibition</h5>
+              <p>Our Grade School Academians proudly showcased their intelligence, creativity, critical thinking in the 𝗘𝘀𝘀𝗮𝘆 𝗪𝗿𝗶𝘁𝗶𝗻𝗴 𝗮𝗻𝗱 𝗠𝘆 𝗡𝘂𝘁𝗿𝗶𝘁𝗶𝗼𝘂𝘀 𝗕𝗮𝘀𝗸𝗲𝘁-Making activities. Through meaningful words and thoughtfully prepared baskets, they demonstrated that proper nutrition is the foundation of learning, growth, and success.
+As we celebrate VM and Nutrition Month, may these activities continue to inspire every young Academian to make healthy choices, express their ideas with confidence, and BLOOM into outstanding and open-hearted members of society.Bursting with creativity, color, and joy, each mask and headdress showcased the unique imagination, artistic expression of our young Academians. Every masterpiece was a beautiful reminder that when creativity blooms, every child has the opportunity to shine. 💚💛
+Using crayons, markers, colored pens, paint, ribbons, pom-poms, stickers, colorful paper, and other decorative materials, our learners transformed simple craft supplies into vibrant works of art. Adding naturally fallen flowers, leaves and twigs celebrated the beauty of nature through their creations.  </p>
+              <a href="news-article.html" class="btn-read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="news-card reveal">
+            <div class="news-image">
+              <img src="indep.jpg" alt="Career Fair">
+              <span class="news-date-badge"><i class="far fa-calendar-alt me-1"></i>January 18, 2025</span>
+            </div>
+            <div class="news-body">
+              <span class="news-category"><i class="fas fa-briefcase me-1"></i>Careers</span>
+              <h5>🇵🇭 𝟭𝟮𝟴𝘁𝗵 𝗣𝗵𝗶𝗹𝗶𝗽𝗽𝗶𝗻𝗲 𝗜𝗻𝗱𝗲𝗽𝗲𝗻𝗱𝗲𝗻𝗰𝗲 𝗗𝗮𝘆</h5>
+              <p>Pasacao Academy proudly joins the nation in celebrating the 128th Philippine Independence Day with the theme, “Kalayaan. Kinabukasan. Kasaysayan.”
+This celebration serves as a reminder of the courage and sacrifices of our heroes who fought for the freedom we enjoy today. It is an opportunity for every Filipino to honor our rich history, value our hard-earned liberty, and strengthen our commitment to building a brighter future for our country.
+As one community, let us continue to cherish our freedom, learn from our past, and contribute positively to the nation's progress.
+Mabuhay ang Pilipinas! 🇵🇭</p>
+              <a href="news-article.html" class="btn-read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <div class="pagination-section reveal">
+        <nav aria-label="News pagination">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-chevron-left"></i></a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="news.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="news.html?page=2">2</a></li>
+            <li class="page-item"><a class="page-link" href="news.html?page=3">3</a></li>
+            <li class="page-item"><a class="page-link" href="news.html?page=4">4</a></li>
+            <li class="page-item">
+              <a class="page-link" href="news.html?page=2"><i class="fas fa-chevron-right"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="text-center mt-4 reveal">
+        <a href="news.html" class="btn btn-outline-dark-green btn-custom">View All News <i class="fas fa-arrow-right ms-2"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+   10. TESTIMONIALS
+  ============================================ -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="green-text fw-semibold text-uppercase small">Testimonials</span>
+        <h2 class="section-title">What Our Community Says</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Hear from our students, alumni, and faculty about their experiences at PASACAO ACADEMY.</p>
+      </div>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="testimonial-card text-center">
+                  <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>"Standing here today as an alumnus of Pasacao Academy brings back so many memories. Looking around this school, I remember the days when I was still a student—coming to school every day, attending classes, spending time with friends, joining activities, and sometimes struggling with lessons and responsibilities."</p>
+                  <div class="testimonial-author justify-content-center">
+                    <img src="april.jpg" alt="April Quiñones">
+                    <div class="author-info text-start">
+                      <h6>April Rose Q, Belbes</h6>
+                      <span>Alumna, Class of 2008-2009 · Bachelor of Elementary , Master of Arts in Education Major in Educational Management (MAed-EM)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="testimonial-card text-center">
+                  <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>"The faculty at PASACAO ACADEMY genuinely care about student success. The mentorship I received helped me discover my passion for research and led to publishing my first paper as an undergraduate."</p>
+                  <div class="testimonial-author justify-content-center">
+                    <img src="john.jpg" alt="John Rey M. Flores">
+                    <div class="author-info text-start">
+                      <h6>John Rey M. Flores</h6>
+                      <span>Class of 2016-2017· BS Secondary Eduacation Major in English</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-10">
+                <div class="testimonial-card text-center">
+                  <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p>"As a faculty member for over a decade, I've witnessed firsthand the incredible growth of this institution. Pasacao Academy provides the resources and support that enable both students and faculty to thrive."</p>
+                  <div class="testimonial-author justify-content-center">
+                    <img src="nica.jpg" alt="Nica Mae Rimbao">
+                    <div class="author-info text-start">
+                      <h6>Nica Mae Rimbao</h6>
+                      <span>Class 2018-2020· Bachelor of Education / ABM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <i class="fas fa-chevron-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <i class="fas fa-chevron-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+   11. GALLERY
+  ============================================ -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="green-text fw-semibold text-uppercase small">Gallery</span>
+        <h2 class="section-title">Campus in Focus</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Take a visual journey through our beautiful campus and see life at PASACAO ACADEMY.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item reveal" data-index="0">
+            <img src="wika.jpg" alt="Campus Building">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item reveal" data-index="1">
+            <img src="kinder.jpg" alt="University Hall">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item reveal" data-index="2">
+            <img src="garden.jpg" alt="Graduation Day">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item reveal" data-index="3">
+            <img src="dagos.jpg" alt="Library Interior">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item reveal" data-index="4">
+            <img src="offers.jpg" alt="Sports Complex">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item reveal" data-index="5">
+            <img src="cook.jpg" alt="Student Activity">
+            <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="close-lightbox" id="closeLightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+    <img id="lightboxImage" src="" alt="Gallery Image">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- ============================================
+   12. CONTACT SECTION
+  ============================================ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="green-text fw-semibold text-uppercase small">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Have questions? We'd love to hear from you. Reach out and one of our team members will get back to you promptly.</p>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5 reveal-left">
+          <div class="contact-info-card">
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-text">
+                <h6>Our Address</h6>
+                <p>PASACAO ACADEMY Del Norte,<br>Pasacao Academy Camarines Sur, Philippines</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="contact-text">
+                <h6>Phone Number</h6>
+                <p>09103638279<br>+63 912 345 6789</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-text">
+                <h6>Email Address</h6>
+                <p>admissions@PasacaoAcademy.edu<br>info@PasacaoAcademy.edu</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div class="contact-text">
+                <h6>Office Hours</h6>
+                <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 8:00 AM - 12:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal-right">
+          <div class="contact-form-wrapper">
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="col-md-6">
+                  <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                  <select class="form-select" id="subject" required>
+                    <option value="" selected disabled>Select a subject</option>
+                    <option value="admissions">Admissions Inquiry</option>
+                    <option value="academic">Academic Concern</option>
+                    <option value="scholarship">Scholarship Inquiry</option>
+                    <option value="visit">Campus Visit</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-green btn-custom w-100"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrapper reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1785154078841!6m8!1m7!1sWxlp45qxl_Gyk1UJ3ZhADg!2m2!1d13.51435240641768!2d123.0421327574012!3f237.56637600389712!4f1.2150114390537397!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </section>
+
+  <!-- ============================================
+   13. FOOTER
+  ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <span class="footer-brand">
+           PASACAO ACADEMY
+            <small>Excellence in Education Since 1961</small>
+          </span>
+          <p class="footer-desc">PASACAO ACADEMY is committed to providing accessible, quality education that empowers students to become leaders and innovators in their chosen fields.</p>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Academics</a></li>
+            <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Admissions</a></li>
+            <li><a href="news.html"><i class="fas fa-chevron-right"></i> News & Events</a></li>
+            <li><a href="research.html"><i class="fas fa-chevron-right"></i> Research</a></li>
+            <li><a href="campus-life.html"><i class="fas fa-chevron-right"></i> Campus Map</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <h5>Admissions</h5>
+          <ul>
+            <li><a href="admissions.html"><i class="fas fa-chevron-right"></i> Apply Online</a></li>
+            <li><a href="admissions.html#requirements"><i class="fas fa-chevron-right"></i> Requirements</a></li>
+            <li><a href="admissions.html#scholarships"><i class="fas fa-chevron-right"></i> Scholarships</a></li>
+            <li><a href="admissions.html#tuition"><i class="fas fa-chevron-right"></i> Tuition & Fees</a></li>
+            <li><a href="admissions.html#financial-aid"><i class="fas fa-chevron-right"></i> Financial Aid</a></li>
+            <li><a href="admissions.html#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <h5>Academics</h5>
+          <ul>
+            <li><a href="academics.html"><i class="fas fa-chevron-right"></i> Programs</a></li>
+            <li><a href="academics.html#calendar"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+            <li><a href="academics.html#library"><i class="fas fa-chevron-right"></i> Library</a></li>
+            <li><a href="academics.html#online-learning"><i class="fas fa-chevron-right"></i> Online Learning</a></li>
+            <li><a href="academics.html#research-centers"><i class="fas fa-chevron-right"></i> Research Centers</a></li>
+            <li><a href="academics.html#international"><i class="fas fa-chevron-right"></i> International Programs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <h5>Student Services</h5>
+          <ul>
+            <li><a href="campus-life.html#portal"><i class="fas fa-chevron-right"></i> Student Portal</a></li>
+            <li><a href="campus-life.html#registrar"><i class="fas fa-chevron-right"></i> Registrar</a></li>
+            <li><a href="campus-life.html#guidance"><i class="fas fa-chevron-right"></i> Guidance & Counseling</a></li>
+            <li><a href="campus-life.html#career-services"><i class="fas fa-chevron-right"></i> Career Services</a></li>
+            <li><a href="campus-life.html#organizations"><i class="fas fa-chevron-right"></i> Student Organizations</a></li>
+            <li><a href="campus-life.html#health-services"><i class="fas fa-chevron-right"></i> Health Services</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-8 text-center text-md-start">
+            <p>&copy; 2026 <a href="index.html">Pasacao Academy</a>. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a></p>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <p></i>I.T Department</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ============================================
+   14. SEARCH MODAL
+  ============================================ -->
+  <div class="search-modal-overlay" id="searchOverlay">
+    <button class="close-search-btn" id="searchCloseBtn">&times;</button>
+    <div class="search-modal-content">
+      <div class="search-input-group">
+        <i class="fas fa-search"></i>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search for programs, news, pages..." autocomplete="off">
+        <button id="searchSubmitBtn"><i class="fas fa-arrow-right me-2"></i>Search</button>
+      </div>
+      <div class="search-live-results" id="searchResults"></div>
+      <div class="search-hints">
+        Press <kbd>/</kbd> or <kbd>Ctrl+K</kbd> to open search
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+   SCRIPTS
+   ============================================ -->
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
